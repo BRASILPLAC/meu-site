@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço de Corte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Serviço de Corte - Router e Laser</h1>
+    </header>
+    <main>
+        <form id="uploadForm">
+            <label for="file">Envie seu arquivo (PDF):</label>
+            <input type="file" id="file" accept="application/pdf">
+            <label for="material">Escolha o material:</label>
+            <select id="material">
+                <option value="mdf">MDF</option>
+                <option value="acrilico">Acrílico</option>
+                <option value="acm">ACM</option>
+            </select>
+            <label for="thickness">Espessura (mm):</label>
+            <select id="thickness">
+                <option value="3">3 mm</option>
+                <option value="5">5 mm</option>
+                <option value="10">10 mm</option>
+            </select>
+            <button type="button" onclick="simulate()">Simular Corte</button>
+        </form>
+        <div id="simulation"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
